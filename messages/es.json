@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "servicios": "Servicios",
+    "proceso": "Cómo funciona",
+    "resultados": "Resultados",
+    "precios": "Precios",
+    "faq": "FAQ",
+    "cta": "Agenda tu demo"
+  },
+  "hero": {
+    "badge": "Impulsado por IA de última generación",
+    "titlePre": "Agentes de IA que",
+    "titleHighlight": "venden y atienden",
+    "titlePost": "por ti, 24/7",
+    "subtitle": "Nébula construye agentes de WhatsApp con IA, páginas web de alta conversión y posicionamiento SEO/GEO para que tu negocio crezca en piloto automático.",
+    "ctaPrimary": "Agenda tu demo",
+    "ctaSecondary": "Ver servicios",
+    "microcopy": "Sin permanencias · Implementación en días · Resultados medibles"
+  },
+  "finalCta": {
+    "eyebrow": "Es tu momento",
+    "titlePre": "¿Listo para que la IA",
+    "titleHighlight": "trabaje por ti",
+    "subtitle": "Agenda una demo gratuita y descubre, con tu propio caso, cuánto puede crecer tu negocio con Nébula.",
+    "ctaPrimary": "Agenda tu demo gratis",
+    "ctaSecondary": "Ver precios"
+  }
+}
