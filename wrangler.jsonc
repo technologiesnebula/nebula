@@ -1,0 +1,11 @@
+{
+  // Cloudflare Workers — sitio estático (Next.js static export).
+  // `npm run build` genera la carpeta `out/`, y este Worker la sirve como assets.
+  "name": "nebula",
+  "compatibility_date": "2026-06-23",
+  "assets": {
+    "directory": "./out",
+    // Sirve out/404.html cuando una ruta no existe.
+    "not_found_handling": "404-page"
+  }
+}
