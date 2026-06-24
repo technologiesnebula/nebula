@@ -6,7 +6,7 @@ export function HeroFallback() {
   return (
     <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
       {/* glowing core — centered on every screen, a touch smaller on phones */}
-      <div className="animate-float absolute left-1/2 top-1/2 h-[34vh] w-[34vh] -translate-x-1/2 -translate-y-1/2 md:h-[42vh] md:w-[42vh]">
+      <div className="animate-float absolute left-1/2 top-1/2 h-[38vh] w-[38vh] -translate-x-1/2 -translate-y-1/2 md:h-[42vh] md:w-[42vh]">
         <div
           className="absolute inset-0 rounded-full blur-2xl"
           style={{

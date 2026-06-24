@@ -96,7 +96,7 @@ function Scene() {
         speed={0.6}
       />
       {/* centered jewel orb — a touch smaller on phones so it frames fully; full presence on desktop */}
-      <Core scale={portrait ? 0.85 : 1.45} />
+      <Core scale={portrait ? 0.95 : 1.45} />
     </group>
   );
 }
