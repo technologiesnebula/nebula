@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
+import { TrustBar } from "@/components/sections/TrustBar";
 import { ValueProp } from "@/components/sections/ValueProp";
 import { Services } from "@/components/sections/Services";
 import { HowItWorks } from "@/components/sections/HowItWorks";
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <main id="main">
         <Hero />
+        <TrustBar />
         <ValueProp />
         <Services />
         <HowItWorks />
