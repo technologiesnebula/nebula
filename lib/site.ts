@@ -148,8 +148,7 @@ export const services: Service[] = [
     plans: [
       {
         name: "Básico",
-        setup: { label: "Inversión inicial", amount: 500000 },
-        recurring: { label: "Mantenimiento mensual", amount: 100000 },
+        setup: { label: "Inversión inicial", amount: 600000 },
         features: [
           "Sitio de alta conversión",
           "Diseño responsive premium",
