@@ -77,7 +77,7 @@ export function Services() {
         subtitle="Tres soluciones que funcionan solas o juntas como un sistema completo de ventas, atención y visibilidad."
       />
 
-      <div className="mt-16 flex flex-col gap-16">
+      <div className="mt-12 flex flex-col gap-12">
         {services.map((service) => (
           <div key={service.id}>
             <Reveal
@@ -110,7 +110,7 @@ export function Services() {
         ))}
       </div>
 
-      <Reveal className="mt-14 flex flex-col items-center gap-3 text-center">
+      <Reveal className="mt-10 flex flex-col items-center gap-3 text-center">
         <p className="max-w-xl text-sm text-muted">
           Valores de referencia en pesos colombianos (COP). Te entregamos una
           cotización formal y a tu medida antes de empezar.

@@ -12,7 +12,7 @@ export function Testimonials() {
         subtitle="Atención más rápida, más reservas y más ventas — sin sumar carga al equipo."
       />
 
-      <StaggerContainer className="mt-14 grid gap-5 md:grid-cols-3">
+      <StaggerContainer className="mt-10 grid gap-5 md:grid-cols-3">
         {testimonials.map((t) => (
           <StaggerItem
             key={t.name}

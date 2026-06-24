@@ -41,7 +41,7 @@ export function ValueProp() {
         </p>
       </Reveal>
 
-      <StaggerContainer className="mt-16 grid gap-5 md:grid-cols-3">
+      <StaggerContainer className="mt-12 grid gap-5 md:grid-cols-3">
         {pillars.map((p) => (
           <StaggerItem
             key={p.title}

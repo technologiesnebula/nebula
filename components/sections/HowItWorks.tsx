@@ -23,7 +23,7 @@ export function HowItWorks() {
         subtitle="Un proceso claro y sin fricción. Tú nos cuentas tu negocio; nosotros lo ponemos a trabajar con IA."
       />
 
-      <div ref={ref} className="relative mt-16">
+      <div ref={ref} className="relative mt-12">
         {/* desktop connector */}
         <div className="absolute left-0 right-0 top-7 hidden h-px bg-border md:block">
           <motion.div

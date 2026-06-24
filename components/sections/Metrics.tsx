@@ -26,7 +26,7 @@ export function Metrics() {
             Números que cambian cuando la IA trabaja por ti
           </h2>
 
-          <StaggerContainer className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
+          <StaggerContainer className="mt-10 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
             {metrics.map((m) => (
               <StaggerItem key={m.label} className="text-center">
                 <p
