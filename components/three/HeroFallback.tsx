@@ -5,9 +5,8 @@
 export function HeroFallback() {
   return (
     <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
-      {/* glowing core — much smaller and lifted into the open sky on phones,
-          full size and centered from md+ */}
-      <div className="animate-float absolute left-1/2 top-[29%] h-[27vh] w-[27vh] -translate-x-1/2 -translate-y-1/2 md:top-1/2 md:h-[42vh] md:w-[42vh]">
+      {/* glowing core — centered on every screen, a touch smaller on phones */}
+      <div className="animate-float absolute left-1/2 top-1/2 h-[34vh] w-[34vh] -translate-x-1/2 -translate-y-1/2 md:h-[42vh] md:w-[42vh]">
         <div
           className="absolute inset-0 rounded-full blur-2xl"
           style={{

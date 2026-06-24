@@ -65,14 +65,13 @@ function Scene() {
   const group = useRef<Group>(null);
   const camera = useThree((s) => s.camera);
   const size = useThree((s) => s.size);
-  // On portrait phones the centered core hides behind the headline. Lift it
-  // into the open sky above the text and pull the camera back a touch so the
-  // full shape is framed with more of the starfield around it.
+  // On portrait phones keep the core centered like desktop; just pull the
+  // camera back so the orb is fully framed with starfield around it.
   const portrait = size.height > size.width;
 
   useEffect(() => {
-    // Pull the camera further back on phones so the orb reads small and a lot
-    // more of the starfield fills the frame.
+    // Pull the camera further back on phones so the orb is fully framed and
+    // the starfield fills the rest of the frame.
     camera.position.set(0, 0, portrait ? 7.6 : 6);
     camera.updateProjectionMatrix();
   }, [camera, portrait]);
@@ -86,7 +85,7 @@ function Scene() {
   });
 
   return (
-    <group ref={group} position={[0, portrait ? 1.45 : 0, 0]}>
+    <group ref={group}>
       <Stars
         radius={80}
         depth={55}
@@ -96,8 +95,8 @@ function Scene() {
         fade
         speed={0.6}
       />
-      {/* much smaller jewel orb high in the sky on phones; full presence on desktop */}
-      <Core scale={portrait ? 0.66 : 1.45} />
+      {/* centered jewel orb — a touch smaller on phones so it frames fully; full presence on desktop */}
+      <Core scale={portrait ? 0.85 : 1.45} />
     </group>
   );
 }
