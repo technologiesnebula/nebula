@@ -87,9 +87,12 @@ export function Hero() {
         {use3D ? <HeroCanvas /> : <HeroFallback />}
       </div>
 
-      {/* legibility gradient over the canvas */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/40 via-background/10 to-background" />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_45%,transparent,rgba(8,7,12,0.55))]" />
+      {/* legibility scrim — lighter on phones so the starfield and core read,
+          restored to the heavier desktop look from md+ */}
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/20 via-transparent to-background md:from-background/40 md:via-background/10" />
+      {/* on phones: a soft scrim behind the headline, edges left clear for stars.
+          on desktop: the original edge vignette. */}
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(90%_52%_at_50%_50%,rgba(8,7,12,0.42),transparent_74%)] md:bg-[radial-gradient(60%_50%_at_50%_45%,transparent,rgba(8,7,12,0.55))]" />
 
       {/* cursor glow */}
       {!reduced && (
