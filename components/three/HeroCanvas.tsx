@@ -9,13 +9,11 @@ import type { Group, Mesh } from "three";
 import { colorsHex } from "@/lib/design-tokens";
 
 /**
- * Living energy core: a molten, slowly morphing sphere wrapped in a faceted
- * "alien" wireframe shell. Both react to the pointer/touch — the core swells
- * and distorts more as you move toward the edges, the shell counter-rotates.
+ * Living energy core: a molten, slowly morphing sphere that reacts to the
+ * pointer/touch — it swells and distorts more as you move toward the edges.
  */
 function Core({ scale }: { scale: number }) {
   const ref = useRef<Mesh>(null);
-  const shell = useRef<Mesh>(null);
   // drei's distort material exposes `distort` as a live, mutable prop.
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mat = useRef<any>(null);
@@ -32,10 +30,6 @@ function Core({ scale }: { scale: number }) {
       const target = scale * (1 + Math.sin(t * 0.9) * 0.018 + energy * 0.06);
       const next = MathUtils.lerp(ref.current.scale.x, target, 0.08);
       ref.current.scale.setScalar(next);
-    }
-    if (shell.current) {
-      shell.current.rotation.y = -t * 0.1;
-      shell.current.rotation.z = t * 0.05;
     }
     if (mat.current) {
       mat.current.distort = MathUtils.lerp(
@@ -60,17 +54,6 @@ function Core({ scale }: { scale: number }) {
           metalness={0.62}
           distort={0.32}
           speed={2}
-        />
-      </mesh>
-
-      {/* alien energy shell — faint faceted cage that drifts the other way */}
-      <mesh ref={shell} scale={scale * 1.14}>
-        <icosahedronGeometry args={[1.25, 2]} />
-        <meshBasicMaterial
-          color={colorsHex.primaryLight}
-          wireframe
-          transparent
-          opacity={0.13}
         />
       </mesh>
     </Float>
@@ -114,7 +97,7 @@ function Scene() {
         speed={0.6}
       />
       {/* much smaller jewel orb high in the sky on phones; full presence on desktop */}
-      <Core scale={portrait ? 0.46 : 1.45} />
+      <Core scale={portrait ? 0.66 : 1.45} />
     </group>
   );
 }
