@@ -80,7 +80,7 @@ function MegaPanel({ group }: { group: MenuGroup }) {
 /* ------------------------------ Mobile menu ------------------------------ */
 
 function MobileAccordion({ onNavigate }: { onNavigate: () => void }) {
-  const [open, setOpen] = useState<string | null>(menuGroups[0].key);
+  const [open, setOpen] = useState<string | null>(null);
 
   return (
     <div className="flex flex-col gap-1">
@@ -324,8 +324,19 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
-            className="fixed inset-0 z-40 overflow-y-auto bg-background/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-[60] overflow-y-auto bg-background/95 backdrop-blur-xl md:hidden"
           >
+            <motion.button
+              type="button"
+              aria-label="Cerrar menú"
+              onClick={() => setOpen(false)}
+              initial={{ opacity: 0, scale: 0.85 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.3, ease: easeOutExpo }}
+              className="absolute right-6 top-6 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-border-strong hover:text-foreground"
+            >
+              <X size={18} />
+            </motion.button>
             <nav className="flex min-h-full flex-col px-8 pb-12 pt-24">
               <MobileAccordion onNavigate={() => setOpen(false)} />
               <motion.a
