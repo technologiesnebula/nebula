@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 
 export function FinalCTA() {
   return (
-    <section id="contacto" className="relative scroll-mt-24 px-4 py-16 md:py-24">
+    <section id="contacto" className="relative scroll-mt-24 px-4 py-12 md:py-20">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[2rem] border border-primary/20 px-6 py-20 text-center md:px-12 md:py-28">
           {/* intense purple background */}
