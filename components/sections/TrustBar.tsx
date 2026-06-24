@@ -31,14 +31,18 @@ export function TrustBar() {
         Construido sobre la mejor tecnología del mundo
       </p>
       <div className="mask-fade-x relative flex overflow-hidden">
-        <div className="animate-marquee flex min-w-full shrink-0 items-center">
+        <div className="animate-marquee flex shrink-0 items-center">
+          <Row />
+          <Row />
           <Row />
           <Row />
         </div>
         <div
           aria-hidden="true"
-          className="animate-marquee flex min-w-full shrink-0 items-center"
+          className="animate-marquee flex shrink-0 items-center"
         >
+          <Row />
+          <Row />
           <Row />
           <Row />
         </div>
