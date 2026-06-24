@@ -114,7 +114,7 @@ function Scene() {
         speed={0.6}
       />
       {/* much smaller jewel orb high in the sky on phones; full presence on desktop */}
-      <Core scale={portrait ? 0.4 : 1.45} />
+      <Core scale={portrait ? 0.46 : 1.45} />
     </group>
   );
 }
