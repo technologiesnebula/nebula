@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Logo } from "@/components/layout/Logo";
 import {
   Icon,
@@ -5,7 +6,8 @@ import {
   InstagramIcon,
   LinkedinIcon,
 } from "@/components/icons";
-import { site, nav, services, whatsappUrl } from "@/lib/site";
+import { site, nav, whatsappUrl } from "@/lib/site";
+import { getGroup } from "@/lib/pages";
 import { Mail } from "lucide-react";
 
 export function Footer() {
@@ -79,21 +81,25 @@ export function Footer() {
             </ul>
           </nav>
 
-          {/* services */}
-          <nav aria-label="Servicios">
+          {/* product */}
+          <nav aria-label="Producto">
             <h3 className="font-mono text-xs uppercase tracking-[0.16em] text-muted">
-              Servicios
+              Producto
             </h3>
             <ul className="mt-4 flex flex-col gap-2.5">
-              {services.map((s) => (
-                <li key={s.id}>
-                  <a
-                    href="#servicios"
+              {getGroup("producto").items.map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    href={`/producto/${item.slug}`}
                     className="flex items-center gap-2 text-sm text-muted transition-colors hover:text-foreground"
                   >
-                    <Icon name={s.icon} size={14} className="text-primary-light" />
-                    {s.title.split(" · ")[0]}
-                  </a>
+                    <Icon
+                      name={item.icon}
+                      size={14}
+                      className="text-primary-light"
+                    />
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>

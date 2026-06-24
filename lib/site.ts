@@ -18,7 +18,22 @@ export type IconKey =
   | "sparkles"
   | "target"
   | "plug"
-  | "clock";
+  | "clock"
+  | "store"
+  | "utensils"
+  | "heart"
+  | "building"
+  | "briefcase"
+  | "graduation"
+  | "users"
+  | "book"
+  | "message"
+  | "workflow"
+  | "rocket"
+  | "search"
+  | "phone"
+  | "mapPin"
+  | "layers";
 
 export const site = {
   name: "Nébula",
@@ -46,11 +61,11 @@ export function whatsappUrl(message?: string) {
 }
 
 export const nav: { label: string; href: string }[] = [
-  { label: "Servicios", href: "#servicios" },
-  { label: "Cómo funciona", href: "#proceso" },
-  { label: "Resultados", href: "#resultados" },
-  { label: "Precios", href: "#servicios" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Cómo funciona", href: "/#proceso" },
+  { label: "Resultados", href: "/#resultados" },
+  { label: "Precios", href: "/#servicios" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export type Plan = {
