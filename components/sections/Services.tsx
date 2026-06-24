@@ -74,7 +74,7 @@ export function Services() {
       <SectionHeading
         eyebrow="Servicios"
         title="Todo lo que tu negocio necesita para crecer con IA"
-        subtitle="Tres soluciones que funcionan solas o juntas como un sistema completo de ventas, atención y visibilidad."
+        subtitle="Dos soluciones que funcionan solas o juntas como un sistema completo de ventas, atención y visibilidad."
       />
 
       <div className="mt-12 flex flex-col gap-12">

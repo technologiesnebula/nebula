@@ -1,8 +1,8 @@
 # Nébula
 
 > Nébula es una empresa de inteligencia artificial que ayuda a negocios a vender y
-> atender de forma automática. Construye agentes de IA para WhatsApp, páginas web de
-> alta conversión y estrategias de posicionamiento digital (SEO/GEO). Opera en
+> atender de forma automática. Construye agentes de IA para WhatsApp y páginas web de
+> alta conversión con posicionamiento digital (SEO/GEO) incluido. Opera en
 > Colombia con precios en pesos colombianos (COP).
 
 ## Qué hace Nébula
@@ -12,10 +12,10 @@
   mensuales. Plan Avanzado (ventas, servicio al cliente y agendamiento de citas) desde
   $1.500.000 COP + $250.000 COP mensuales.
 - **Páginas Web**: desarrollo a medida, optimizado y de alta conversión. Plan Básico desde
-  $500.000 COP + $100.000 COP de mantenimiento mensual. Plan Avanzado desde $1.000.000 COP +
-  $200.000 COP mensuales.
-- **Posicionamiento Digital (SEO / GEO)**: posicionamiento en Google y Google Maps, y
-  optimización para motores de IA. Estrategia Integral desde $1.000.000 COP.
+  $500.000 COP + $100.000 COP de mantenimiento mensual. Plan Avanzado desde $1.200.000 COP +
+  $200.000 COP mensuales, con dominio y hosting incluidos, página profesional y animada,
+  pagos directos en la página y posicionamiento SEO + GEO (citable por IA, Google Business
+  Profile / Maps).
 
 ## Para quién es
 

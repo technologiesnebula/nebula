@@ -145,41 +145,15 @@ export const services: Service[] = [
       {
         name: "Avanzado",
         highlight: true,
-        setup: { label: "Inversión inicial", amount: 1000000 },
+        setup: { label: "Inversión inicial", amount: 1200000 },
         recurring: { label: "Mantenimiento mensual", amount: 200000 },
         features: [
           "Todo lo del plan Básico",
-          "Secciones e integraciones a medida",
-          "Animaciones e interacciones avanzadas",
-          "Optimización de conversión (CRO)",
-        ],
-      },
-    ],
-  },
-  {
-    id: "seo-geo",
-    icon: "seo",
-    eyebrow: "Crecimiento",
-    title: "Posicionamiento Digital · SEO / GEO",
-    description:
-      "Haz que tu negocio aparezca en los primeros resultados de Google y en los mapas — y que la IA te cite. Estrategia integral de visibilidad orgánica.",
-    bullets: [
-      "Posicionamiento en Google y Maps",
-      "Optimización para motores de IA (GEO)",
-      "Contenido y autoridad de marca",
-      "Reportes de tráfico y posiciones",
-    ],
-    plans: [
-      {
-        name: "Estrategia Integral",
-        highlight: true,
-        setup: { label: "Inversión", amount: 1000000 },
-        features: [
-          "Auditoría SEO + GEO completa",
-          "Optimización on-page y técnica",
+          "Dominio y hosting incluidos",
+          "Página profesional, animada y avanzada",
+          "Pagos directos en la página",
+          "Posicionamiento SEO + GEO (citable por IA)",
           "Google Business Profile / Maps",
-          "Citabilidad por IA (llms.txt, datos estructurados)",
-          "Reporte mensual de resultados",
         ],
       },
     ],
